@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,900;1,900&family=Rubik+Doodle+Shadow&family=Rubik+Lines&display=swap');
+
+body {
+  background-color: #000000;
+  font-family: Poppins;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 2em;
+}
+
+header img {
+    width: 150px;
+}
+
+.tagline {
+    font-size: 3em;
+    margin-left: 1em;
+    text-align: justify;
+}
+
+.hero {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.button {
+    text-decoration: none; 
+    padding: 1em 2em;
+    background-color: #e50914;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    border-radius: auto;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(230, 44, 23);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+    scale: 3;
+}
+
+.button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgb(247, 5, 5);
+}
+
+.button:active {
+    scale: 1;
+}
+
+.pricing {
+    padding: 2em;
+}
+
+.pricing h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.plans-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plan {
+    padding: 2em;
+    border: 1px solid #f7f1f1;
+    border-radius: 5px;
+    margin: 1em;
+    box-shadow: 0 5px 10px rgba(252, 160, 2, 0.1);
+}
+
+.plan.active {
+    border-style: square;
+    box-shadow: 0 0 10px rgba(243, 147, 4, 0.2);
+}
+
+.plan h3 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.plan ul li {
+    margin-bottom: 0.5em;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.price span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.price .annual {
+    text-decoration: line-through;
+    color: #ddd;
+}
+
+.pricing-toggle {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.pricing-toggle label {
+    margin: 1cqh;
+}
+
+.pricing-toggle input[type="radio"] {
+    display: none;
+}
+
+.features {
+    padding: 2em;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.features table {
+    width: 100%;
+    border-collapse: separate;
+    border-top: 1px solid #ddd;
+}
+
+.features table thead tr th {
+    padding: 1em;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.features table tbody tr td {
+    padding: 1em;
+    border-bottom: 1px solid #ddd
+}
+
+.plan.selected {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

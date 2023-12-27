@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unlock Your Entertainment | Your Name Here</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Here">
+    <h1 class="tagline">Binge your favorites, anytime, anywhere.</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <video src="video.mp4" autoplay muted loop></video>
+      <div class="hero-content">
+        <h2>Start your free trial today.</h2>
+        <a href="#" class="button" onclick="selectButton(this)">Join Now</a>
+      </div>
+    </section>
+  </main>
+  
+
+  <section class="pricing">
+    <h2>Choose your plan</h2>
+    <div class="plans-grid">
+      <div class="plan basic">
+        <h3>Basic</h3>
+        <ul>
+          <li>1 Screen at a Time</li>
+          <li>Limited HD</li>
+          <li>Download on 1 Device</li>
+        </ul>
+        <div class="price">
+          <span class="monthly">$9.99</span>
+          <span class="annual"><s></s> </span>
+        </div>
+        <a href="#" class="button">Choose Basic</a>
+      </div>
+      <div class="plan standard active">
+        <h3>Standard</h3>
+        <ul>
+          <li>2 Screens at a Time</li>
+          <li>Full HD & HDR</li>
+          <li>Downloads on 2 Devices</li>
+        </ul>
+        <div class="price">
+          <span class="monthly">$14.99</span>
+          <span class="annual"></span>
+        </div>
+        <a href="#" class="button">Choose Standard</a>
+      </div>
+      <div class="plan premium">
+        <h3>Premium</h3>
+        <ul>
+          <li>4 Screens at a Time</li>
+          <li>4K Ultra HD</li>
+          <li>Downloads on 4 Devices</li>
+          <li>Simultaneous Viewing</li>
+        </ul>
+        <div class="price">
+          <span class="monthly">$19.99</span>
+          <span class="annual"></span>
+        </div>
+        <a href="#" class="button">Choose Premium</a>
+      </div>
+    </div>
+    <div class="pricing-toggle">
+      <label for="monthly">Monthly</label>
+      <input type="radio" id="monthly" name="pricing" checked>
+      <label for="annual">Annual (Save 20%)</label>
+      <input type="radio" id="annual" name="pricing">
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Compare Plans</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Basic</th>
+          <th>Standard</th>
+          <th>Premium</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Screens at a Time</td>
+          <td>1</td>
+          <td>2</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Video Quality</td>
+          <td>Limited HD</td>
+          <td>Full HD & HDR</td>
+          <td>4K Ultra HD</td>
+        </tr>
+        <tr>
+          <td>Downloads</td>
+          <td>1 Device</td>
+          <td>2 Devices</td>
+          <td>4 Devices</td>
+        </tr>
+        <tr>
+          <td>Simultaneous Viewing</td>
+          <td>-</td>
+          <td>-</td>
+          <td>✓</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="button">Subscribe</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Name Here. All rights reserved.</p>
+    <ul>
+      <!-- ... (footer content) ... -->
+    </ul>
+  </footer>
+</body>
+
+</html>
